@@ -87,7 +87,6 @@ def input_guess(guess):
      
         
     
-
     
 # create frame
 f = simplegui.create_frame("Guess the number", 200, 200)
