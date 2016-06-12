@@ -12,7 +12,8 @@
 # 4 - scissors
 
 # helper functions
-import random 
+import math
+import random
 
 def name_to_number(name):
     # delete the following pass statement and fill in your code below
@@ -27,7 +28,7 @@ def name_to_number(name):
     elif name == "scissors":
         return 4
     else:
-        return "None"
+        print "Choice is not valid!"
 
     # convert name to number using if/elif/else
     # don't forget to return the result!
@@ -46,7 +47,8 @@ def number_to_name(number):
     elif number == 4:
         return "scissors"
     else:
-        return "None"
+        print "Choice is not valid!"
+    
     
     # convert number to a name using if/elif/else
     # don't forget to return the result!
@@ -57,37 +59,34 @@ def rpsls(player_choice):
     
     
     # print a blank line to separate consecutive games
+    print " "
     
     # print out the message for the player's choice
-
+    print "Your choice was:", player_choice
+    
     # convert the player's choice to player_number using the function name_to_number()
+    player_number = name_to_number(player_choice)
     
     # compute random guess for comp_number using random.randrange()
-
+    comp_number = random.randrange(0,5)
+    
     # convert comp_number to comp_choice using the function number_to_name()
+    comp_choice = number_to_name(comp_number)
     
     # print out the message for computer's choice
-
+    print "The Computer Chose:", comp_choice
+    
     # compute difference of comp_number and player_number modulo five
+    x = (player_number - comp_number) % 5
 
     # use if/elif/else to determine winner, print winner message
-    
-    print # prints blank line
-    
-    print "Player chooses", player_choice
-    player_number = name_to_number(player_choice)
-    comp_number = random.randrange(0, 5)
-    
-    print "Computer chooses", number_to_name(comp_number)
-    
-    difference = (comp_number - player_number) % 5
-    
-    if difference == 0:
-        print "Player and Computer Tie"
-    elif difference <= 2:
-        print "Player Wins!"
-    else:
+    if x == 0:
+        print "Player and Computer tie!"
+    elif x > 2:
         print "Computer Wins!"
+    else:
+        print "Player Wins"
+        
     
 # test your code - THESE CALLS MUST BE PRESENT IN YOUR SUBMITTED CODE
 rpsls("rock")
@@ -97,3 +96,5 @@ rpsls("lizard")
 rpsls("scissors")
 
 # always remember to check your completed program against the grading rubric
+
+
