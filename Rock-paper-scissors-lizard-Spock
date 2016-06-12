@@ -92,7 +92,7 @@ def rpsls(player_choice):
 rpsls("rock")
 rpsls("Spock")
 rpsls("paper")
-rpsls("lizard")
+rpsls("lizard") 
 rpsls("scissors")
 
 # always remember to check your completed program against the grading rubric
