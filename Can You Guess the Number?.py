@@ -32,7 +32,7 @@ def range100():
 
 def range1000():
     global secret_number
-    global guess_remain
+    global guess_remain 
     # button that changes the range to [0,1000) and starts a new game     
     print "New game. Range is [0,1000)"
     print "Number of remaining guesses is 10"
