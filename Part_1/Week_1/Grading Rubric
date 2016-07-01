@@ -1,0 +1,8 @@
+Grading rubric — 4 pts total
+
+Your peers will assess your mini-project according to the following rubric. Small deviations from the textual output described above, like an extra period (.) or space are fine. Whether moderate deviations, such as just printing "shrubbery", satisfy an item of the grading rubric is at your peers' discretion during their assessment. You should avoid large deviations such as printing a different Monty Python quote. Here is a breakdown of the scoring:
+
+1 pt — A valid CodeSkulptor URL was submitted. No credit if the code is just pasted into the text box.
+1 pt — Running the program does not throw an error.
+1 pt — The program prints a message in the console.
+1 pt — The program prints the desired message "We want... a shrubbery!".
