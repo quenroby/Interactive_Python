@@ -1,0 +1,13 @@
+Grading rubric — 11 pts total (scaled to 100 pts)
+
+Your peers will assess your mini-project according to the rubric given below. To guide you in determining whether your project satisfies each item in the rubric, please consult the video that demonstrates our implementation of “Guess the number”. Small deviations from the textual output of our implementation are fine. You should avoid potentially confusing deviations (such as printing “Too high” or “Too low” instead of “Lower” and “Higher”). Whether moderate deviations satisfy an item of the grading rubric is at your peers' discretion during their assessment.
+
+Here is a break down of the scoring:
+
+1 pt — The game starts immediately when the “Run” button in CodeSkulptor is pressed.
+1 pt — A game is always in progress. Finishing one game immediately starts another in the same range.
+1 pt — The game reads guess from the input field and correctly prints it out.
+3 pts — The game correctly plays “Guess the number” with the range [0, 100) and prints understandable output messages to the console. Play three complete games: 1 pt for each correct game.
+2 pts — The game includes two buttons that allow the user to select the range [0, 100) or the range [0, 1000) for the secret number. These buttons correctly change the range and print an appropriate message. (1 pt per button.)
+2 pts — The game restricts the player to a finite number of guesses and correctly terminates the game when these guesses are exhausted. Award 1 pt if the number of remaining guesses is printed, but the game does not terminate correctly.
+1 pt — The game varies the number of allowed guesses based on the range of the secret number — seven guesses for range [0, 100), ten guesses for range [0, 1000).
